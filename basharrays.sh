@@ -8,7 +8,7 @@
 # Declaration of variables
 declare -A dirArray;
 #Empty Array to store directory strings.
-i=0
+i=0;
 #Counter
 # Declaration of functions
 
