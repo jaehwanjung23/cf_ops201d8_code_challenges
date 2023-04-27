@@ -25,5 +25,6 @@ for dirName in $@
     done
 # You can pass in the directory names as arguments to the script, separated by spaces. The function will loop through the arguments, store the names as Strings starting from index 0, create a new directory of the name passed.
 # It will then cd into the new directory, create a default README.txt file, cd back out, and shift i the counter to iterate through the array.
+# As per the challenge specifics, you would run "bash basharrays.sh dir1 dir2 dir3 dir4" to meet the specficiations.
 
 # End
