@@ -7,14 +7,26 @@
 
 # Declaration of variables
 # Declaration of functions
-
-
-# Main
-while true
+function killPidFn(){
+    while true;
     do
         ps aux;
         read -p "Ready to kill. What is the PID? " pid;
         sudo kill -9 $pid;
-        echo "Successfully killed $pid, exit using ctrl + C or continue to kill."
+        read -p "Process has been terminated. Do you want to kill another process? (y/n) " yn
+        case $yn in
+            [yY] ) echo "Ok killa";
+                    killPidFn;
+                    break;;
+            [nN] ) echo "Exiting";
+                    exit;;
+            * ) echo "Please input only y/n, exiting script";
+                    exit;;
+        esac 
     done
+}
+
+# Main
+killPidFn;
+
 # End
