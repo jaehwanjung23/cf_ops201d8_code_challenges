@@ -17,9 +17,11 @@ function killPidFn(){
         case $yn in
             [yY] ) echo "Ok killa";
                     killPidFn;
-                    break;;
+                    break
+                    ;;
             [nN] ) echo "Exiting";
-                    exit;;
+                    exit
+                    ;;
             * ) echo "Please input only y/n, exiting script";
                     exit;;
         esac 
