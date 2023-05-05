@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Script Name:                  logretrieval.ps1
 # Author:                       Jaehwan Jung
 # Date of latest revision:      05/04/23
