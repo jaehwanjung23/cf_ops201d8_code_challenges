@@ -30,20 +30,12 @@ Get-Process | Sort-Object -Property WS(K) -Descending | Select-Object -First 5
 Start-Process -FilePath "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" -ArgumentList '--start-fullscreen "https://owasp.org/www-project-top-ten"'
 #Starts google chrome and navigates to the link.
 
-openNotepad = Start-Process -FilePath "C:\Windows\System32\Notepad.exe"
-
-function notePadFunc {
-  while (( $count < 10 ))
-    do
-      openNotepad
-      count=$(($count +1))
-    done
+for ($i = 1 ; i -le 10; $i++){
+  Start-Process notepad
 }
-
-notePadFunc
 #Starts notepad 10 times using a for loop
 
-Stop-Process -Name "notepad"
+Stop-Process -Name "notepad" -PassThru
 #Kills all notepad processes
 
 Stop-Process -Id 992 -Confirm -PassThru
