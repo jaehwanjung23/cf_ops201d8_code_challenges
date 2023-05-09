@@ -35,7 +35,7 @@ for ($i = 1 ; i -le 10; $i++){
 }
 #Starts notepad 10 times using a for loop
 
-Stop-Process -Name "notepad" -PassThru
+Stop--Process -Name "notepad" -PassThru
 #Kills all notepad processes
 
 Stop-Process -Id 992 -Confirm -PassThru
