@@ -1,2 +1,4 @@
 # cf_ops201d8_code_challenges
+
 This repository contains the code challenges from the CF Ops 201 Curriculum.
+It contains scripts mostly written in bash and PowerShell. The scripts automate administrative tasks such as network settings, checking logs, and other system processes. The code challenges are meant to build fundamental knowledge of scripting, such as functions, variables, and parameters. My favorite assignment was checkAndCreate, because I actually used the script myself when working in the terminal. These scripts can be implemented to automate and accelerate tasks that would otherwise be done manually. The scripts can also be run remotely, which allows users to work from anywhere. If I had the time, I intend on working on domainLookUp.sh further to see what can be done with the information available. Overall, I found shell scripting very interesting, and want to learn about to what extent shell scripts can perform complex tasks.
